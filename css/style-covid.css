@@ -1,0 +1,115 @@
+@font-face {
+    font-family: gandom;
+    src: url('../asset/Gandom.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: vazir;
+    src: url('../asset/Vazir-Variable.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    direction: rtl;
+}
+#header{
+    position: absolute;
+    right: 5vw;
+    top: 2vw;
+    background-color: #f7f7f7;
+    padding: 8px;
+    border: 1px solid #d1a7ff;
+    border-radius: 10%;
+}
+#header a{
+    text-decoration: none;
+    font-size: calc(1vw + 5px);
+    color: #6a6a6a;
+    font-family: vazir;
+}
+#header a:hover{
+    color: #a1a1a1;
+}
+#header a:active{
+    color: #494949;
+}
+#covid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#covid-p{
+    font-family: tahoma;
+    margin: 0 10% 5% 10%;
+    font-size: calc(1vw + 6px);
+    line-height: calc(2vw + 12px);
+    background-color: #f1e8ff;
+    border-radius: 15px;
+    padding: 10px;
+}
+#content-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#content-page p{
+    font-size: calc(1vw + 7px);
+    font-family: gandom;
+    color: white;
+    background-color: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+#content-page img{
+    width: calc(10vw + 65px);
+    border-radius: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px 10px #beb5ca;
+}
+.content-img{
+    width: calc(30vw + 50px);
+    border-radius: 15px;
+    float: left;
+    vertical-align: middle;
+    margin: 4%;
+}
+/* #footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100px;
+}
+#footer > a{
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: #ffffff;
+    padding: 12px;
+    border: 1px solid white;
+    box-shadow: 0px 4px 8px 0px #9a5ce5;
+    font-family: gandom;
+    font-size: calc(1vw + 5px);
+    color: #50385d;
+}
+#footer > a:hover{
+    color: #78568b;
+}
+#footer > a:active{
+    color: #35263d;
+} */
+@media screen and (min-width:1024px){
+    #covid-p{
+        margin: 0 10% 6% 10%;
+    }
+}
